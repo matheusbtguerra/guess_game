@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/10125/10125617.png">
+</head>
+<body id="body">
+    <header>
+        <div class="main-header">
+
+        </div>
+    </header>
+
+    <main>
+        <h1>JOGO DA ADIVINHACAO</h1>
+        <div class="main-container">
+            <div class="mini-container">
+                <div class="input-container">
+                    <label for="typedNum"><h2>Chute um Numero</h2></label>
+                    <input type="number" placeholder="Digite aqui (de 0 - 100)..." required min="1" max="100" id="typedNum">
+                </div>
+                <button onclick="verify()" id="btn" class="button">Jogar</button>
+                <audio id="audioBtn">
+                    <source src="btnSound.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <div class="pig-container" id="pigContainer">
+            <img src="https://pm1.aminoapps.com/6980/4e4c28f42400b66ff464952d753439758b173050r1-225-225v2_00.jpg">
+            <p id="pigText">
+               
+            </p>
+
+            <audio id="pigAudio1">
+               <source src="pigsound1.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="pigAudio2">
+               <source src="pigsound2.mp3" type="audio/mpeg">
+            </audio>
+       </div>
+
+        <div class="bg-container">
+            <p>Clique no bloco para alterar o fundo</p>
+            <button id="btnBg" onclick="switchBg()">
+            <img src="https://i.pinimg.com/originals/99/85/85/9985851e1d9b2a7dfd24f9e0a56c261f.jpg" alt="">
+            </button>
+
+            <audio id="anvilSound">
+                <source src="anvil.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+    </main>
+
+    <footer>
+        <img id="pig" src="https://media.tenor.com/iUoxFQGhxcAAAAAi/pig-mine.gif">
+        
+        <div class="main-footer">
+            <p>
+                Copyright 2024 &copy; | Designed by Matheus Guerra
+            </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
