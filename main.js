@@ -26,7 +26,7 @@ document.getElementById('btn').addEventListener('click', function() {
         pigText.textContent = '"O número gerado é MAIOR! OINC OINC..."';
         attemps++;
     } else {
-        pigText.textContent = '"OINCCC VOCÊ VENCEU!! Com " + attemps + " tentativas."';
+        pigText.textContent = '"OINCCC VOCÊ VENCEU!! Com '  + attemps +  ' tentativas."';
         newNumber();
     }
 
